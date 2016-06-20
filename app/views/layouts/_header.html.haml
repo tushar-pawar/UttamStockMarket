@@ -1,0 +1,19 @@
+%div#fixedheader.col-md-12
+  .row 
+    %div.col-md-4
+      =image_tag  "stock-market-logo.jpg", class:'logo'
+    %row.col-md-8
+      .row
+        %div.title.col-md-12 Uttam Stock Market
+      .row.navmenu.col-md-12
+        %ul.topnav
+          %li
+            %a.active{:href => "#home"} Home
+          %li
+            %a{:href => "#news"} News
+          %li
+            %a{:href => "#contact"} Contact
+          %li
+            %a{:href => "#about"} About
+          %li.icon
+            %a{:href => "javascript:void(0);", :onclick => "myFunction()", :style => "font-size:15px;"} ☰
