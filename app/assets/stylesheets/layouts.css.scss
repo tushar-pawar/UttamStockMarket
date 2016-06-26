@@ -8,7 +8,7 @@ div#fixedheader {
   top:0px;
   left:0px;
   width:100%;
-  color:#CCC;
+  color:#ea5738;
   background:#333;
   padding:20px;
 }
@@ -24,6 +24,7 @@ div#fixedfooter {
 }
 
 .logo{
+  padding:-15px;
   height:80px;
   width:150px;
   display:inline;
@@ -40,11 +41,10 @@ div#fixedfooter {
 }
 
 .row.navmenu{
-  display:inline;
-  float:right;
+  display:block;
+  // float:right;
 }
 
-body {margin:0;}
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -53,7 +53,9 @@ ul.topnav {
   background-color: #333;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+  display: inline;
+}
 
 ul.topnav li a {
   display: inline-block;
@@ -65,31 +67,11 @@ ul.topnav li a {
   font-size: 17px;
 }
 
-ul.topnav li a:hover {background-color: #111;}
-
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+ul.topnav li a:hover {
+  background-color: #111;
 }
 
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+ul.topnav li.icon {
+  display: none;
+  font-size:15px;
 }
