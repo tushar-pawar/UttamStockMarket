@@ -4,15 +4,19 @@ body {
 }
 
 div#fixedheader {
-  position:fixed;
+  position: relative;
   top:0px;
   left:0px;
+  height:22vh;
   width:100%;
-  color:#ea5738;
-  background:#333;
-  padding:20px;
+  color:#fff;
+  background: #336699;
+  padding:2%;
 }
 
+.sign-in, .sign-up{
+  font-size: 2vh;
+}
 div#fixedfooter {
   position:fixed;
   bottom:0px;
@@ -25,46 +29,46 @@ div#fixedfooter {
 
 .logo{
   padding:-15px;
-  height:80px;
-  width:150px;
+  height: 13vh;
+  width:14vw;
   display:inline;
 }
 
 .title{
-  float:left;
-  font: bold 30px/40px Georgia, serif;
-  display:inline;
+  font-size: 6vmin;
+  top: 5vh;
+  left: 27vw;
 }
 
 .footer{
   text-align:center;
 }
 
-.row.navmenu{
-  display:block;
-  // float:right;
+// .row.navmenu{
+  // display:block;
+// }
+ul.topnav {
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
 }
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.custom-nav-menu{
+  height: 5vh;
 }
 
 ul.topnav li {
+  font-size: 3vh;
   display: inline;
 }
 
 ul.topnav li a {
+  padding: 0.3vh 0.3vw;
   display: inline-block;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
 }
 
 ul.topnav li a:hover {
